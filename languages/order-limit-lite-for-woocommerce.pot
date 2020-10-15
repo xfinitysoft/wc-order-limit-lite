@@ -1,0 +1,655 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version:order-limit-lite-wc\n"
+"POT-Creation-Date: 2020-08-17 11:52+0500\n"
+"PO-Revision-Date: 2020-08-17 17:55+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: esc_html_e;esc_html__;esc_attr__;esc_attr_e;__;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/admin/class-wcoll-admin.php:34
+#: includes/admin/class-wcoll-admin.php:207
+#: includes/admin/class-wcoll-admin.php:360 includes/class-wcoll-rule.php:35
+msgid "Jan"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:35
+#: includes/admin/class-wcoll-admin.php:208
+#: includes/admin/class-wcoll-admin.php:361 includes/class-wcoll-rule.php:36
+msgid "Feb"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:36
+#: includes/admin/class-wcoll-admin.php:209
+#: includes/admin/class-wcoll-admin.php:362 includes/class-wcoll-rule.php:37
+msgid "Mar"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:37
+#: includes/admin/class-wcoll-admin.php:210
+#: includes/admin/class-wcoll-admin.php:363 includes/class-wcoll-rule.php:38
+msgid "Apr"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:38
+#: includes/admin/class-wcoll-admin.php:211
+#: includes/admin/class-wcoll-admin.php:364 includes/class-wcoll-rule.php:39
+msgid "May"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:39
+#: includes/admin/class-wcoll-admin.php:212
+#: includes/admin/class-wcoll-admin.php:365 includes/class-wcoll-rule.php:40
+msgid "Jun"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:40
+#: includes/admin/class-wcoll-admin.php:213
+#: includes/admin/class-wcoll-admin.php:366 includes/class-wcoll-rule.php:41
+msgid "Jul"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:41
+#: includes/admin/class-wcoll-admin.php:214
+#: includes/admin/class-wcoll-admin.php:367 includes/class-wcoll-rule.php:42
+msgid "Aug"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:42
+#: includes/admin/class-wcoll-admin.php:215
+#: includes/admin/class-wcoll-admin.php:368 includes/class-wcoll-rule.php:43
+msgid "Sep"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:43
+#: includes/admin/class-wcoll-admin.php:216
+#: includes/admin/class-wcoll-admin.php:369 includes/class-wcoll-rule.php:44
+msgid "Oct"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:44
+#: includes/admin/class-wcoll-admin.php:217
+#: includes/admin/class-wcoll-admin.php:370 includes/class-wcoll-rule.php:45
+msgid "Nov"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:45
+#: includes/admin/class-wcoll-admin.php:218
+#: includes/admin/class-wcoll-admin.php:371 includes/class-wcoll-rule.php:46
+msgid "Dec"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:48
+#: includes/admin/class-wcoll-admin.php:221
+#: includes/admin/class-wcoll-admin.php:374 includes/class-wcoll-rule.php:49
+msgid "Monday"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:49
+#: includes/admin/class-wcoll-admin.php:222
+#: includes/admin/class-wcoll-admin.php:375 includes/class-wcoll-rule.php:50
+msgid "Tuesday"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:50
+#: includes/admin/class-wcoll-admin.php:223
+#: includes/admin/class-wcoll-admin.php:376 includes/class-wcoll-rule.php:51
+msgid "Wednesday"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:51
+#: includes/admin/class-wcoll-admin.php:224
+#: includes/admin/class-wcoll-admin.php:377 includes/class-wcoll-rule.php:52
+msgid "Thursday"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:52
+#: includes/admin/class-wcoll-admin.php:225
+#: includes/admin/class-wcoll-admin.php:378 includes/class-wcoll-rule.php:53
+msgid "Friday"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:53
+#: includes/admin/class-wcoll-admin.php:226
+#: includes/admin/class-wcoll-admin.php:379 includes/class-wcoll-rule.php:54
+msgid "Saturday"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:54
+#: includes/admin/class-wcoll-admin.php:227
+#: includes/admin/class-wcoll-admin.php:380 includes/class-wcoll-rule.php:55
+msgid "Sunday"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:184
+#: includes/admin/class-wcoll-admin.php:331
+#: includes/admin/class-wcoll-admin.php:483
+#: includes/admin/views/ajax-templates/template-categories-rule-row.php:17
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:17
+#: includes/admin/views/ajax-templates/template-single-product-cat-rule-row.php:28
+#: includes/admin/views/ajax-templates/template-single-product-rule-row.php:29
+#: includes/admin/views/view-wcol-category-rules.php:93
+#: includes/admin/views/view-wcol-product-rules.php:89
+msgid "Amount"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:185
+#: includes/admin/class-wcoll-admin.php:332
+#: includes/admin/class-wcoll-admin.php:484
+#: includes/admin/views/ajax-templates/template-categories-rule-row.php:18
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:18
+#: includes/admin/views/ajax-templates/template-single-product-cat-rule-row.php:29
+#: includes/admin/views/ajax-templates/template-single-product-rule-row.php:30
+#: includes/admin/views/view-wcol-category-rules.php:96
+#: includes/admin/views/view-wcol-product-rules.php:92
+msgid "Quantity"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:186
+msgid "Sure you want to delete selected Rule(s)"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:196
+msgid "WC Order Limit Lite"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:235
+#: includes/admin/class-wcoll-admin.php:388
+#: includes/admin/views/view-wcol-category-rules.php:156
+#: includes/admin/views/view-wcol-product-rules.php:160
+msgid "Add New Rule"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:263
+#: includes/admin/class-wcoll-admin.php:414
+msgid "Rule for guest users"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:266
+#: includes/admin/class-wcoll-admin.php:417
+msgid "Rule for specific users"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:269
+#: includes/admin/class-wcoll-admin.php:420
+msgid "Rule for specific roles"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:272
+#: includes/admin/class-wcoll-admin.php:423
+msgid "Rule for All users"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:276
+#: includes/admin/class-wcoll-admin.php:427
+msgid "Rule for all users"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:279
+#: includes/admin/class-wcoll-admin.php:430
+#: includes/admin/views/ajax-templates/template-single-product-cat-rule-row.php:4
+#: includes/admin/views/ajax-templates/template-single-product-rule-row.php:4
+msgid "Delete"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:288
+#: includes/admin/class-wcoll-admin.php:439
+msgid "Edit This Rule:"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:290
+#: includes/admin/class-wcoll-admin.php:441
+msgid "This Product is included in a Rule that is being applied accomulatively with other products so if you edit this products's limit options then it will be excluded from that accomulative rule."
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:301
+#: includes/admin/class-wcoll-admin.php:452
+msgid "Disable:"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:305
+#: includes/admin/class-wcoll-admin.php:313
+#: includes/admin/class-wcoll-admin.php:456
+#: includes/admin/class-wcoll-admin.php:464
+#: includes/admin/views/ajax-templates/template-single-product-rule-row.php:11
+msgid "Leave blank for no limit."
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:310
+#: includes/admin/class-wcoll-admin.php:461
+msgid "Minimum Order:"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:311
+#: includes/admin/class-wcoll-admin.php:462
+#: includes/admin/views/ajax-templates/template-single-product-cat-rule-row.php:9
+#: includes/admin/views/ajax-templates/template-single-product-rule-row.php:9
+msgid "Enter Minimum Order Limit"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:317
+#: includes/admin/class-wcoll-admin.php:469
+msgid "Enable Maximum Limit:"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:319
+#: includes/admin/class-wcoll-admin.php:471
+msgid "Across All Order Option is Enabled"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:322
+#: includes/admin/class-wcoll-admin.php:474
+msgid "Maximum Order:"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:323
+#: includes/admin/class-wcoll-admin.php:475
+#: includes/admin/views/ajax-templates/template-single-product-cat-rule-row.php:21
+#: includes/admin/views/ajax-templates/template-single-product-rule-row.php:22
+msgid "Enter Maximum Order Limit"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:329
+#: includes/admin/class-wcoll-admin.php:481
+msgid "Applied on:"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:334
+#: includes/admin/class-wcoll-admin.php:486
+msgid "Credits"
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:338
+#: includes/admin/class-wcoll-admin.php:490
+#: includes/admin/views/ajax-templates/template-single-product-cat-rule-row.php:36
+#: includes/admin/views/ajax-templates/template-single-product-rule-row.php:37
+msgid "Select if limit will be applied on quantity or amount."
+msgstr ""
+
+#: includes/admin/class-wcoll-admin.php:385
+#: includes/admin/views/view-wcol-rules.php:2
+msgid "WC Order Limit Lite Rules"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-categories-rule-row.php:9
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:9
+#: includes/admin/views/view-wcol-category-rules.php:82
+#: includes/admin/views/view-wcol-product-rules.php:78
+msgid "Show more details"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-categories-rule-row.php:11
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:11
+#: includes/admin/views/view-wcol-category-rules.php:24
+#: includes/admin/views/view-wcol-category-rules.php:84
+#: includes/admin/views/view-wcol-product-rules.php:25
+#: includes/admin/views/view-wcol-product-rules.php:80
+msgid "Minimum Limit"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-categories-rule-row.php:15
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:15
+#: includes/admin/views/view-wcol-category-rules.php:88
+#: includes/admin/views/view-wcol-order-total-rules.php:54
+#: includes/admin/views/view-wcol-product-rules.php:84
+msgid "Applied On"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-categories-rule-row.php:25
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:25
+#: includes/admin/views/view-wcol-category-rules.php:34
+#: includes/admin/views/view-wcol-category-rules.php:103
+#: includes/admin/views/view-wcol-product-rules.php:35
+#: includes/admin/views/view-wcol-product-rules.php:99
+msgid "Accumulative"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-categories-rule-row.php:31
+#: includes/admin/views/ajax-templates/template-categories-rule-row.php:37
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:31
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:37
+#: includes/admin/views/view-wcol-category-rules.php:40
+#: includes/admin/views/view-wcol-category-rules.php:109
+#: includes/admin/views/view-wcol-category-rules.php:115
+#: includes/admin/views/view-wcol-product-rules.php:40
+#: includes/admin/views/view-wcol-product-rules.php:105
+#: includes/admin/views/view-wcol-product-rules.php:111
+msgid "More Options"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-categories-rule-row.php:32
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:32
+#: includes/admin/views/view-wcol-category-rules.php:110
+#: includes/admin/views/view-wcol-product-rules.php:106
+msgid "Hide Options"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-categories-rule-row.php:41
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:41
+#: includes/admin/views/view-wcol-category-rules.php:119
+#: includes/admin/views/view-wcol-product-rules.php:115
+msgid "Disable"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-categories-rule-row.php:50
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:50
+#: includes/admin/views/ajax-templates/template-single-product-cat-rule-row.php:15
+#: includes/admin/views/ajax-templates/template-single-product-rule-row.php:16
+#: includes/admin/views/view-wcol-category-rules.php:126
+#: includes/admin/views/view-wcol-product-rules.php:122
+msgid "Enable Maximum Limit"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-categories-rule-row.php:58
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:58
+#: includes/admin/views/view-wcol-category-rules.php:26
+#: includes/admin/views/view-wcol-category-rules.php:134
+#: includes/admin/views/view-wcol-product-rules.php:27
+#: includes/admin/views/view-wcol-product-rules.php:130
+msgid "Maximum Limit"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-products-rule-row.php:63
+msgid "Roles"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-single-product-cat-rule-row.php:4
+#: includes/admin/views/ajax-templates/template-single-product-rule-row.php:4
+msgid "New Rule(Not Saved)"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-single-product-cat-rule-row.php:8
+#: includes/admin/views/ajax-templates/template-single-product-rule-row.php:8
+msgid "Minimum Order"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-single-product-cat-rule-row.php:11
+msgid "Leave blank for no limit"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-single-product-cat-rule-row.php:20
+#: includes/admin/views/ajax-templates/template-single-product-rule-row.php:21
+msgid "Maximum Order"
+msgstr ""
+
+#: includes/admin/views/ajax-templates/template-single-product-cat-rule-row.php:26
+#: includes/admin/views/ajax-templates/template-single-product-rule-row.php:27
+#: includes/admin/views/view-wcol-category-rules.php:28
+#: includes/admin/views/view-wcol-product-rules.php:29
+msgid "Applied on"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:6
+msgid "Product Limit Options:"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:10
+#: includes/admin/views/view-wcol-advance-tab.php:17
+msgid "Products Limits"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:12
+msgid "Check this box to enable products based limits."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:19
+msgid "Enable Products Limits"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:26
+#: includes/admin/views/view-wcol-advance-tab.php:133
+msgid "Message for Product limit"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:28
+msgid "This message will be shown on cart page if customer do not fulfill the order limit that you specified for products."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:35
+msgid "Use {product-name} for Product Name, {min-limit} for Minimum Limit, {max-limit} for Maximum Limit {applied-on} for quantity/amount , {time-span} for rule time span, {limit-reset-day} for rule rest date."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:43
+msgid "Message for Product limit For Accomulative Rules"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:45
+msgid "This message will be shown on cart page if customer do not fulfill rule for Acomulative Products."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:52
+msgid "Use {product-names} for Product Names seperated by comma, {max-limit} for Maximum Limit {min-limit} for Minimum Limit, {applied-on} for quantity/amount,  , {time-span} for rule time span, {limit-reset-day} for rule rest date."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:60
+msgid "Category Limit Options:"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:64
+#: includes/admin/views/view-wcol-advance-tab.php:71
+msgid "Category Limits"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:66
+msgid "Check this box to enable product categories based limits."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:73
+msgid "Enable Category Limits"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:80
+msgid "Message for Category limit"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:82
+msgid "This message will be shown on cart page if customer do not fulfill the order limit that you specified for product categories."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:89
+msgid "Use {category-name} for Caegory Name, {min-limit} for Minimum Limit, {max-limit} for Maximum Limit {applied-on} for quantity/amount , {time-span} for rule time span, {limit-reset-day} for rule rest date."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:97
+msgid "Message for Category limit for Accomulative Rules"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:99
+msgid "This message will be shown on cart page if customer do not fulfill an accomulative rule for product categories."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:106
+msgid "Use {category-names} for Caegory Names seperated by comma, {max-limit} for Maximum Limit, {min-limit} for Minimum Limit, {applied-on} for quantity/amount , {time-span} for rule time span, {limit-reset-day} for rule rest date."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:113
+msgid "Cart Total Limit Options:"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:117
+#: includes/admin/views/view-wcol-advance-tab.php:124
+msgid "Cart Total Limits"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:119
+msgid "Check this box to enable limits on cart total."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:126
+msgid "Enable Cart Total Limits"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:135
+msgid "This message will be shown on cart page if customer do not fulfill the order limit that you specified for cart totals."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:142
+msgid "Use {min-limit} for Minimum Limit, {max-limit} for Maximum Limit, {applied-on} for quantity/amount."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:152
+msgid "Other Options:"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:156
+msgid "Hide Checkout Button"
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:158
+msgid "If you check this checkbox then Checkout Button will be hidden on cart page if customer do not fulfill any of the limits that you specified."
+msgstr ""
+
+#: includes/admin/views/view-wcol-advance-tab.php:166
+#: includes/admin/views/view-wcol-order-total-rules.php:68
+msgid "Save Changes"
+msgstr ""
+
+#: includes/admin/views/view-wcol-category-rules.php:7
+#: includes/admin/views/view-wcol-order-total-rules.php:7
+#: includes/admin/views/view-wcol-product-rules.php:8
+msgid "Note! "
+msgstr ""
+
+#: includes/admin/views/view-wcol-category-rules.php:7
+msgid "Category Limits are Disabled."
+msgstr ""
+
+#: includes/admin/views/view-wcol-category-rules.php:9
+msgid "Category Limits are disabled, You can enable Category Limits in Advance Tab."
+msgstr ""
+
+#: includes/admin/views/view-wcol-category-rules.php:21
+msgid "Category"
+msgstr ""
+
+#: includes/admin/views/view-wcol-category-rules.php:30
+msgid "Select wether Min and Max limits will be applied on Product Category(s)'s Amount in cart or on Quantity of Product Category(s)'s Items in Cart."
+msgstr ""
+
+#: includes/admin/views/view-wcol-category-rules.php:36
+msgid "Either limits will be applied accomulatively or individually on selected Product categories. i.e if you check this box then accomulative total amount or quantity for selected Product Categories will be considered rather than individual Product Category"
+msgstr ""
+
+#: includes/admin/views/view-wcol-category-rules.php:64
+msgid "All Categories"
+msgstr ""
+
+#: includes/admin/views/view-wcol-category-rules.php:109
+#: includes/admin/views/view-wcol-product-rules.php:105
+msgid "Enable this Limit"
+msgstr ""
+
+#: includes/admin/views/view-wcol-category-rules.php:154
+#: includes/admin/views/view-wcol-product-rules.php:158
+msgid "Save"
+msgstr ""
+
+#: includes/admin/views/view-wcol-category-rules.php:155
+#: includes/admin/views/view-wcol-product-rules.php:159
+msgid "Delete Selected"
+msgstr ""
+
+#: includes/admin/views/view-wcol-order-total-rules.php:7
+msgid "Order Total Limits are Disabled."
+msgstr ""
+
+#: includes/admin/views/view-wcol-order-total-rules.php:9
+msgid "Orser Total Limits are disabled, You can enable Order Total Limits in Advance Tab."
+msgstr ""
+
+#: includes/admin/views/view-wcol-order-total-rules.php:18
+msgid "Cart Total Minumum Limit:"
+msgstr ""
+
+#: includes/admin/views/view-wcol-order-total-rules.php:20
+msgid "Cart Total(amount or total Items in Cart) should be greater than or equal to this limit."
+msgstr ""
+
+#: includes/admin/views/view-wcol-order-total-rules.php:30
+msgid "Enable Cart Total Maximum Limit:"
+msgstr ""
+
+#: includes/admin/views/view-wcol-order-total-rules.php:32
+msgid "Check this box if you want to enable Maximum Limit for Cart Total."
+msgstr ""
+
+#: includes/admin/views/view-wcol-order-total-rules.php:42
+msgid "Cart Total Maximum Limit:"
+msgstr ""
+
+#: includes/admin/views/view-wcol-order-total-rules.php:44
+msgid "Cart Total(amount or total Items in Cart) should be less than or equal to this limit."
+msgstr ""
+
+#: includes/admin/views/view-wcol-order-total-rules.php:56
+msgid "Select wether Min and Max limits for Cart Total will be applied on Cart total Amount or on total Items in Cart."
+msgstr ""
+
+#: includes/admin/views/view-wcol-order-total-rules.php:61
+msgid "Total items in Cart"
+msgstr ""
+
+#: includes/admin/views/view-wcol-order-total-rules.php:62
+msgid "Cart Total"
+msgstr ""
+
+#: includes/admin/views/view-wcol-product-rules.php:8
+msgid "Product Limits are Disabled."
+msgstr ""
+
+#: includes/admin/views/view-wcol-product-rules.php:10
+msgid "Product Limits are disabled, You can enable Product Limits in Advance Tab."
+msgstr ""
+
+#: includes/admin/views/view-wcol-product-rules.php:22
+msgid "Product"
+msgstr ""
+
+#: includes/admin/views/view-wcol-product-rules.php:31
+msgid "Select wether Min and Max limits will be applied on Product(s)'s Amount in cart or on Quantity of Product(s)'s Items in Cart."
+msgstr ""
+
+#: includes/admin/views/view-wcol-product-rules.php:37
+msgid "Either limits will be applied accomulatively or individually on selected Product categories. i.e if you check this box then accomulative total amount or quantity for selected Products will be considered rather than individual Product."
+msgstr ""
+
+#: includes/admin/views/view-wcol-product-rules.php:61
+msgid "All Products"
+msgstr ""
+
+#: includes/admin/views/view-wcol-product-rules.php:135
+msgid "Start Date"
+msgstr ""
+
+#: includes/admin/views/view-wcol-product-rules.php:140
+msgid "End Date"
+msgstr ""
+
+#: includes/admin/views/view-wcol-rules.php:12
+msgid "Products"
+msgstr ""
+
+#: includes/admin/views/view-wcol-rules.php:15
+msgid "Categories"
+msgstr ""
+
+#: includes/admin/views/view-wcol-rules.php:18
+msgid "Order Total"
+msgstr ""
+
+#: includes/admin/views/view-wcol-rules.php:23
+msgid "Advance"
+msgstr ""
+
+#: wc-order-limit-lite.php:35
+msgid "WC Order Limit Lite requires WooCommerce to run. Please install WooCommerce and activate before attempting to activate again."
+msgstr ""
