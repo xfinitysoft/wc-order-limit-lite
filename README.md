@@ -88,7 +88,7 @@ The WooCommerce limit order quantity plugin lets you create rules for minimum an
 
 ### Premium link
 <dl>
-	<dd>[Woocommerce Order Limit](https://codecanyon.net/item/woocommerce-wc-vendors-order-limit/20688279?s_rank=15)</dd>
+	<dd><a href="https://codecanyon.net/item/woocommerce-wc-vendors-order-limit/20688279?s_rank=15">Woocommerce Order Limit</a></dd>
 </dl>
 
 ### Use Cases
