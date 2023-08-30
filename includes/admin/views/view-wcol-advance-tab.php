@@ -86,7 +86,7 @@
 					<div>
 						<textarea name="wcol-category-limit-message" id="wcol-category-limit-message" rows="3"><?php echo $wcol_settings['category_limit_message']; ?></textarea>
 						<span style="display: inline-block; padding: 0 50px 0 5px; font-style: italic; font-size: 11px; ">
-							<?php esc_html_e('Use {category-name} for Caegory Name, {min-limit} for Minimum Limit, {max-limit} for Maximum Limit {applied-on} for quantity/amount , {time-span} for rule time span, {limit-reset-day} for rule rest date.', 'xsollwc-domain');?>
+							<?php esc_html_e('Use {category-name} for Category, {min-limit} for Minimum Limit, {max-limit} for Maximum Limit {applied-on} for quantity/amount , {time-span} for rule time span, {limit-reset-day} for rule rest date.', 'xsollwc-domain');?>
 						</span>
 
 					</div>
@@ -103,7 +103,7 @@
 					<div>
 						<textarea name="wcol-category-limit-message-accomulative" id="wcol-category-limit-message-accomulative" rows="3"><?php echo $wcol_settings['category_limit_message_accomulative']; ?></textarea>
 						<span style="display: inline-block; padding: 0 50px 0 5px; font-style: italic; font-size: 11px; ">
-							<?php esc_html_e('Use {category-names} for Caegory Names seperated by comma, {max-limit} for Maximum Limit, {min-limit} for Minimum Limit, {applied-on} for quantity/amount , {time-span} for rule time span, {limit-reset-day} for rule rest date.' , 'xsollwc-domain');?>
+							<?php esc_html_e('Use {category-names} for Categories seperated by comma, {max-limit} for Maximum Limit, {min-limit} for Minimum Limit, {applied-on} for quantity/amount , {time-span} for rule time span, {limit-reset-day} for rule rest date.' , 'xsollwc-domain');?>
 						</span>
 
 					</div>

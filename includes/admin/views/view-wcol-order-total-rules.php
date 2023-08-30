@@ -21,7 +21,7 @@
 					</div>
 				</th>
 				<td>
-					<input type="number" min="0" name="wcol-cart-total-min-limit" value="<?php echo $wcol_settings['cart_total_minimum_limit']; ?>"/>
+					<input type="number" min="0" name="wcol-cart-total-min-limit" value="<?php if(isset($wcol_settings['cart_total_minimum_limit'])){ echo $wcol_settings['cart_total_minimum_limit'];} ?>"/>
 				</td>
 			</tr>
 			
@@ -33,11 +33,11 @@
 					</div>
 				</th>
 				<td>
-					<input type="checkbox" class="enable-cart-total-max-rule-limit" name="wcol-cart-total-enable-max-limit" <?php if( $wcol_settings['cart_total_enable_maximum_limit']=='on' ){echo 'checked'; } ?> />
+					<input type="checkbox" class="enable-cart-total-max-rule-limit" name="wcol-cart-total-enable-max-limit" <?php if(isset($wcol_settings['cart_total_enable_maximum_limit']) && $wcol_settings['cart_total_enable_maximum_limit']=='on' ){echo 'checked'; } ?> />
 				</td>
 			</tr>
 			
-			<tr valign="top" class="<?php if( $wcol_settings['cart_total_enable_maximum_limit']!='on' ){ echo 'wcol-hidden ';}?>">
+			<tr valign="top" class="<?php if(isset($wcol_settings['cart_total_enable_maximum_limit']) && $wcol_settings['cart_total_enable_maximum_limit']!='on' ){ echo 'wcol-hidden ';}?>">
 				<th scope="row" class="titledesc">
 					<label for="wcol-cart-total-max-limit"><?php esc_html_e('Cart Total Maximum Limit:', 'xsollwc-domain'); ?></label>
 					<div class="wcol-help-tip">
@@ -45,7 +45,7 @@
 					</div>
 				</th>
 				<td>
-					<input type="number" min="0" class="wcol-rule-max-limit" name="wcol-cart-total-max-limit" value="<?php echo $wcol_settings['cart_total_maximum_limit']; ?>"/>
+					<input type="number" min="0" class="wcol-rule-max-limit" name="wcol-cart-total-max-limit" value="<?php if(isset($wcol_settings['cart_total_maximum_limit'])){ echo  $wcol_settings['cart_total_maximum_limit'];} ?>"/>
 				</td>
 			</tr>
 			
@@ -53,7 +53,7 @@
 				<th scope="row" class="titledesc">
 					<label for="wcol-cart-total-applied-on"><?php esc_html_e('Applied On', 'xsollwc-domain'); ?></label>
 					<div class="wcol-help-tip">
-						<span class="wcol-tip"><?php esc_html_e('Select wether Min and Max limits for Cart Total will be applied on Cart total Amount or on total Items in Cart.', 'xsollwc-domain'); ?></span>
+						<span class="wcol-tip"><?php esc_html_e('Select whether Min and Max limits for Cart Total will be applied on Cart total Amount or on total Items in Cart.', 'xsollwc-domain'); ?></span>
 					</div>
 				</th>
 				<td>

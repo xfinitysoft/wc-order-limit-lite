@@ -545,3 +545,60 @@ button.xs-wcol-close {
 	}
 }
 
+.xs-pro{
+    color:#2fbb1c;
+    font-weight: inherit;
+    font-size: 14px;
+}
+.xs-pro-link{
+    text-decoration: none;
+}
+.xs-button{
+
+}
+.xs-col-button {
+    width:380px;
+    float: left;
+    
+}
+.xs-button-main{
+    display: inline-block;
+    width: 160px
+}
+.xs-button-main p.submit{
+    margin: 0px;
+    padding-bottom: 0px;
+}
+#xs_name,#xs_email{
+    width: 335px;
+}
+.xs-send-email-notice{
+  display: none;
+}
+.xs-send-mail{
+    font-size: 15px !important;
+    font-family: bold;
+    padding: 2px 15px !important;
+}
+.xs-list{
+	display: block;
+	width: 100%;
+	margin-top: 40px;
+}
+.xs_is_active{
+    display:inline-block;
+    visibility:visible;
+    opacity:1
+}
+.xs-top-margin{
+    margin-top: 20px !important; 
+}
+.xs-mail-spinner{
+    margin-top: 38px ;
+}
+.error{
+    outline: 1px solid red;
+}
+.input-group{
+    display: inline-flex;
+}

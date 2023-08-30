@@ -375,13 +375,16 @@ if(!class_exists('XSOLLWC_Admin')){
 		}
 		
 		public function save_xsollwc_product_cat_fields($term_id){
-			XSOLLWC_Rule::save_wcol_options($term_id, 'product_cat');
+			$XSOLLWC_Rule = new XSOLLWC_Rule();
+			$XSOLLWC_Rule->save_wcol_options($term_id, 'product_cat');
 		}
 		
 		
 		public function save_xsollwc_product_cat_fields_on_add_new($term_id, $tt_id){
-			XSOLLWC_Rule::save_wcol_options($term_id, 'product_cat');
+			$XSOLLWC_Rule = new XSOLLWC_Rule();
+			$XSOLLWC_Rule->save_wcol_options($term_id, 'product_cat');
 		}
-		
+
+
 	}
 }

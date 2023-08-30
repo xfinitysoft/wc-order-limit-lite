@@ -26,11 +26,11 @@
 				<th class="manage-column">
 					<?php esc_html_e('Applied on', 'xsollwc-domain'); ?>
 					<div class="wcol-help-tip" style="float:none; margin-right:0;">
-						<span class="wcol-tip" > <?php esc_html_e("Select wether Min and Max limits will be applied on Product Category(s)'s Amount in cart or on Quantity of Product Category(s)'s Items in Cart.", 'xsollwc-domain'); ?> </span>
+						<span class="wcol-tip" > <?php esc_html_e("Select whether Min and Max limits will be applied on Product Category(s)'s Amount in cart or on Quantity of Product Category(s)'s Items in Cart.", 'xsollwc-domain'); ?> </span>
 					</div>
 				</th>
 				<th class="manage-column">
-					<?php esc_html_e('Accumulative', 'xsollwc-domain'); ?>
+					<?php esc_html_e('Accumulatively', 'xsollwc-domain'); ?>
 					<div class="wcol-help-tip" style="float:none; margin-right:0;">
 						<span class="wcol-tip" > <?php esc_html_e('Either limits will be applied accomulatively or individually on selected Product categories. i.e if you check this box then accomulative total amount or quantity for selected Product Categories will be considered rather than individual Product Category' , 'xsollwc-domain'); ?> </span>
 					</div>
@@ -99,7 +99,7 @@
 							<?php echo $applied_on_options;  ?>
 						</select>
 					</td>
-					<td data-colname="<?php esc_attr_e('Accumulative', 'xsollwc-domain'); ?>">
+					<td data-colname="<?php esc_attr_e('Accumulatively', 'xsollwc-domain'); ?>">
 						<input type="hidden" class="wcol-loop-checkbox-hidden" name="wcol-rules[category-rules][accomulative][<?php echo $xs_i; ?>]" value="<?php echo $rule['accomulative']; ?>"/>
 						<input type="checkbox" class="wcol-accomulative wcol-loop-checkbox <?php if($rule['disable-limit']=='on'){echo 'wcol-disabled';} ?>" <?php if($rule['accomulative']=='on'){ echo 'checked';} ?> />
 					</td>	

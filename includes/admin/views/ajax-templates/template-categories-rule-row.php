@@ -22,7 +22,7 @@
 			<?php echo $applied_on_ajax_options; ?>
 		</select>
 	</td>
-	<td data-colname="<?php esc_attr_e('Accumulative', 'xsollwc-domain'); ?>">
+	<td data-colname="<?php esc_attr_e('Accumulatively', 'xsollwc-domain'); ?>">
 		<input type="hidden" class="wcol-loop-checkbox-hidden" name="wcol-rules[category-rules][accomulative][<?php echo esc_html($_POST['wcol_cid']); ?>]"/>
 		<input type="checkbox" class="wcol-accomulative wcol-loop-checkbox"/>
 	</td>	

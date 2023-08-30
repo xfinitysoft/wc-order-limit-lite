@@ -11,6 +11,8 @@ if(!class_exists('XSOLLWC_Rule')){
 
 			add_action('wp_ajax_save_rules', array( $this , 'save_rules' ) );
 			add_action('wp_ajax_nopriv_save_rules' , array( $this , 'save_rules' ) );
+			add_action('wp_ajax_xsollwc_support_form',array( $this , 'xsollwc_support_form'));
+			add_action('wp_ajax_nopriv_xsollwc_support_form',array( $this , 'xsollwc_support_form'));
 			
 			// checck for order limit rules on cart page and checkout page
 			add_action( 'woocommerce_checkout_process', array( $this , 'wcol_order_limit_check' ), 10);
@@ -59,7 +61,12 @@ if(!class_exists('XSOLLWC_Rule')){
 		/*	returns	Array	*/
 		public function get_rules(){
 			$wcol_options = get_option('wcol_options');
-			return $wcol_options['wcol_limit_rules'];
+			if(isset($wcol_options['wcol_limit_rules'])){
+				return $wcol_options['wcol_limit_rules'];
+			}else{
+				return array();
+			}
+			
 		}
 		
 		/*	GET All Settings	*/
@@ -69,6 +76,55 @@ if(!class_exists('XSOLLWC_Rule')){
 			$wcol_options = get_option('wcol_options');
 			return $wcol_options['wcol_settings'];
 		}
+		public function xsollwc_support_form(){
+			$data = array();
+	        parse_str($_POST['data'], $data);
+	        $data['plugin_name'] = 'WC Order limit lite';
+	        $data['version'] = 'lite';
+	        $data['website'] = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER['HTTP_HOST'];
+	        $to = 'xfinitysoft@gmail.com';
+	        switch ($data['type']) {
+	            case 'report':
+	                $subject = 'Report a bug';
+	                break;
+	            case 'hire':
+	                $subject = 'Hire us to customize/develope Plugin/Theme or WordPress projects';
+	                break;
+	            
+	            default:
+	                $subject = 'Request a Feature';
+	                break;
+	        }
+	        
+	        $body = '<html><body><table>';
+	        $body .='<tbody>';
+	        $body .='<tr><th>User Name</th><td>'.$data['xs_name'].'</td></tr>';
+	        $body .='<tr><th>User email</th><td>'.$data['xs_email'].'</td></tr>';
+	        $body .='<tr><th>Plugin Name</th><td>'.$data['plugin_name'].'</td></tr>';
+	        $body .='<tr><th>Version</th><td>'.$data['version'].'</td></tr>';
+	        $body .='<tr><th>Website</th><td><a href="'.$data['website'].'">'.$data['website'].'</a></td></tr>';
+	        $body .='<tr><th>Message</th><td>'.$data['xs_message'].'</td></tr>';
+	        $body .='</tbody>';
+	        $body .='</table></body></html>';
+	        $headers = array('Content-Type: text/html; charset=UTF-8');
+	        $params ="name=".$data['xs_name'];
+	        $params.="&email=".$data['xs_email'];
+	        $params.="&site=".$data['website'];
+	        $params.="&version=".$data['version'];
+	        $params.="&plugin_name=".$data['plugin_name'];
+	        $params.="&type=".$data['type'];
+	        $params.="&message=".$data['xs_message'];
+	        $sever_response = wp_remote_post("https://xfinitysoft.com/wp-json/plugin/v1/quote/save/?".$params);
+	        $se_api_response = json_decode( wp_remote_retrieve_body( $sever_response ), true );	
+	        if($se_api_response['status']){
+	            $mail = wp_mail( $to, $subject, $body, $headers );
+	            wp_send_json(array('status'=>true));
+	        }else{
+	            wp_send_json(array('status'=>false));
+	        }
+	        wp_die();
+		}
+		
 		/*	Save Rules		*/
 		/*	@params	null	*/
 		/*	returns	null	*/
@@ -167,7 +223,6 @@ if(!class_exists('XSOLLWC_Rule')){
 			$new_wcol_options['wcol_customer_rules'] = $wcol_customer_rules;
 			
 			if(isset($params['settings-rules-changes'])){
-				$params['settings-rules-changes'] = array_map(array($this ,'xsollwc_sanitize'), $params['settings-rules-changes']) ;
 				$new_wcol_options['wcol_settings'] = array(
 					'product_limit_message'						=>	esc_html( $params['wcol-product-limit-message'] ),
 					'product_limit_message_across_all_orders'	=>	esc_html( $params['wcol-product-limit-message-across-all-orders'] ),
@@ -581,7 +636,7 @@ if(!class_exists('XSOLLWC_Rule')){
 			if ( isset($wcol_settings['enable_cart_total_limit']) && $wcol_settings['enable_cart_total_limit']=='on') {
 				$applied = false;
 										
-				$applied_on = $wcol_settings['cart_total_applied_on'];
+				$applied_on = isset($wcol_settings['cart_total_applied_on'])?$wcol_settings['cart_total_applied_on']:'';
 				switch($applied_on){
 					case 'amount':
 							$cart_total_amount = apply_filters( 'wcol_cart_total_amount', WC()->cart->total, $wcol_settings, WC()->cart );
@@ -966,7 +1021,9 @@ if(!class_exists('XSOLLWC_Rule')){
 			$wcol_settings = self::get_wcol_settings();
 			if( !WC()->cart->is_empty() && is_checkout() ){
 				if(!WC()->session->get('is_valid_order')){
-					wp_redirect( WC_Cart::get_cart_url() );
+					$cart_page_id = wc_get_page_id( 'cart' );
+					$cart_page_url = $cart_page_id ? get_permalink( $cart_page_id ) : '';
+					wp_redirect($cart_page_url);
 				}
 			}
 		}
@@ -975,7 +1032,7 @@ if(!class_exists('XSOLLWC_Rule')){
 		/*	@params	int Order ID			*/
 		/*	returns	null					*/
 		public function save_order_creation_timestamp($order_id){
-			update_post_meta( $order_id, 'wcol_order_created', time() );
+			update_post_meta($order_id, 'wcol_order_created', time() );
 		}
 
 		/**

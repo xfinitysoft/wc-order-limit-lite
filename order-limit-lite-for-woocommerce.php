@@ -6,14 +6,14 @@
  * Author:              Xfinity Soft
  * Author URI:          http://www.xfinitysoft.com/
  *
- * Version:             0.0.1
+ * Version:             0.0.9
  * Requires at least:   4.4.0
- * Tested up to:        5.5
+ * Tested up to:         6.0
  * WC requires at least: 4.0
- * WC tested up to:      4.4
+ * WC tested up to:      6.0.1
  *
  * Text Domain:         xsollwc-domain
- * Domain Path:         /languages/
+ * Domain Path:         /languages
  *
  * @category            Plugin
  * @author              Xfinity Soft
@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function order_limit_lite_wc_activation_hook(){
 	if ( !class_exists( 'WooCommerce' ) ) { 
 		deactivate_plugins( plugin_basename( __FILE__ ) );
-		wp_die( esc_html__( 'Order Limit Lite for WooCommerce requires WooCommerce to run. Please install WooCommerce and activate before attempting to activate again.', 'xsollwc-domain' ) );
+		wp_die( esc_html__( 'WC Order Limit Lite requires WooCommerce to run. Please install WooCommerce and activate before attempting to activate again.', 'xsollwc-domain' ) );
 	}
 	if ( class_exists('WC_Order_limit')) { 
 		deactivate_plugins( plugin_basename( __FILE__ ) );
@@ -91,7 +91,7 @@ function create_xsollwc_defaults(){
 }
 function xsollwc_admin_notice__error(){
 	$class = 'notice notice-error';
-    $message = esc_html__( 'WC Order Limit has activated so Order Limit Lite for WooCommerce  is deactivate beacuse  both version not run at same time', 'xsollwc-domain' );
+    $message = esc_html__( 'WC Order Limit has activated so WC Order Limit Lite  is deactivate beacuse  both version not run at same time', 'xsollwc-domain' );
  
     printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 }
@@ -143,6 +143,8 @@ if(!class_exists('Order_limit_lite_WC')){
 			add_action('edited_product_cat', array($this->XSOLLWC_Admin, 'save_xsollwc_product_cat_fields'), 10, 1);
 			
 			add_action('created_product_cat', array($this->XSOLLWC_Admin, 'save_xsollwc_product_cat_fields_on_add_new'), 10, 2);
+
+	
 		}
 		
 		public function load_xsollwc_admin_menu(){
